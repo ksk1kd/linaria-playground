@@ -1,6 +1,14 @@
 import { css } from '@linaria/core'
 import { font } from './font'
 
+export const globals = css`
+  :global() {
+    html {
+      box-sizing: border-box;
+    }
+  }
+`
+
 function App() {
   const title = css`
     font-size: 4rem;
